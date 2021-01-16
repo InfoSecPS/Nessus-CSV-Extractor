@@ -1,5 +1,5 @@
 # Nessus-CSV-Extractor
-A script that takes input of a default Nessus CSV output from a scan, and depending on the severity you search for, will pull all the rows for that severity.  
+A script that takes input of a default Nessus CSV output from a scan, and depending on the severity you search for, will pull all the rows for that severity. You can have a play with the columns that it pulls data from by editing the numbers in the `included_cols` variable. The default is pulling `Risk[3], Host[4], Port[6], Name[7]` from a default CSV export. The only failure point is potentially, if you start ticking and unticking boxes on the Nessus CSV export feature. 
 
 `python3 csv-nessus.py -f input-file.csv -s Critical` 
 
