@@ -31,7 +31,7 @@ optional arguments:
                         fields in the Nessus CSV Export
 ```
 It's a pretty basic script that solved an issue for me on a time limited job, and the beauty of it is that you can grep and sort the output to search only unique IP addresses or issues by IP. Like this:
-`python3 csv-nessus.py -f input-file.csv -s Critical | grep 192.168.1.47 | sort -u`
+`python3 csv-nessus.py -f input-file.csv -s Critical | grep 192.168.1.63 | sort -u`
 
 ```
 ['Critical', '192.168.1.63', '445', 'Adobe Flash Player <= 32.0.0.371 (APSB20-30)']
